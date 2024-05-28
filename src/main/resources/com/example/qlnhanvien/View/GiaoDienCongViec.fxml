@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.GiaoDienCongViecController">
+   <children>
+      <AnchorPane layoutY="50.0" prefHeight="450.0" prefWidth="120.0">
+         <children>
+            <Button fx:id="bt_chuathuchien" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="168.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: white;" text="Chưa Thực Hiện" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/usd-circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_hoantat" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="226.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: white;" text="Hoàn Tất" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/check.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_quaylai" alignment="BASELINE_LEFT" layoutX="20.0" layoutY="387.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: navy;" text="Quay Lại " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_tatca" alignment="BASELINE_LEFT" layoutX="11.0" layoutY="58.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="166.0" style="-fx-background-color: white;" text="Tất cả" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/comment-alt.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="bt_dangthuchien" fx:id="bt_dangthuchien" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="114.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: white;" text="Đang Thực Hiện" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_bihuy" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="280.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: white;" text="Bị Hủy" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/cross-circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator layoutX="179.0" layoutY="-36.0" orientation="VERTICAL" prefHeight="488.0" prefWidth="10.0" style="-fx-background-color: navy;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: navy;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="100.0" layoutX="27.0" layoutY="11.0">
+               <image>
+                  <Image url="@image/dhdn.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tf_timkiem" layoutX="303.0" layoutY="13.0" prefWidth="200.0" promptText="Tìm kiếm nhanh..." style="-fx-background-color: white;" />
+            <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="482.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/magnifying-glass.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Acp_nhanvien_ShowFile" layoutX="190.0" layoutY="50.0" prefHeight="450.0" prefWidth="612.0">
+         <children>
+            <TableView fx:id="table_taca" prefHeight="385.0" prefWidth="499.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="colum_IDcongviec" prefWidth="119.33332824707031" text="ID Công Việc" />
+                <TableColumn fx:id="colum_congviec" prefWidth="220.00003051757812" text="Công Việc " />
+                  <TableColumn fx:id="colum_Hannop" minWidth="0.0" prefWidth="130.0" text="Hạn Nộp" />
+                  <TableColumn fx:id="colum_Trangthaithuchien" prefWidth="140.6666259765625" text="Trạng Thái Thực Hiện" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
