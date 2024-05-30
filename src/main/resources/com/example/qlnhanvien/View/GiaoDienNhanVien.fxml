@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.GiaoDienNhanVienController">
+   <children>
+      <AnchorPane layoutX="-10.0" layoutY="50.0" prefHeight="450.0" prefWidth="120.0">
+         <children>
+            <Button fx:id="bt_congviec" alignment="BASELINE_LEFT" layoutX="20.0" layoutY="196.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Công việc" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/suitcase.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="bt_lylich" alignment="BASELINE_LEFT" layoutX="20.0" layoutY="121.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Lý lịch" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/id-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_dangnhap" alignment="BASELINE_LEFT" layoutX="20.0" layoutY="366.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: navy;" text="Đăng xuất" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_home" alignment="BASELINE_LEFT" layoutX="20.0" layoutY="43.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Home" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bt_nhom" alignment="BASELINE_LEFT" layoutX="20.0" layoutY="268.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: white;" text="Nhóm" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/multiple-users-silhouette.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: navy;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="100.0" layoutX="27.0" layoutY="11.0">
+               <image>
+                  <Image url="@image/dhdn.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tf_timkiem" layoutX="303.0" layoutY="13.0" prefWidth="200.0" promptText="Tìm kiếm nhanh..." style="-fx-background-color: white;" />
+            <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="482.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/magnifying-glass.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="149.0" layoutY="50.0" orientation="VERTICAL" prefHeight="450.0" style="-fx-background-color: navy;" />
+      <AnchorPane fx:id="Acp_nhanvien_ShowFile" layoutX="155.0" layoutY="50.0" prefHeight="450.0" prefWidth="647.0" />
+   </children>
+</AnchorPane>
