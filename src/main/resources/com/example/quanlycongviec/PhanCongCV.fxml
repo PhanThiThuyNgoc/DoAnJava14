@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.PhanCongCvController">
+   <children>
+      <Label layoutX="10.0" layoutY="10.0" text="Phân công công việc">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/multiple-users-silhouette.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Button fx:id="them" layoutX="298.0" layoutY="7.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Thêm" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="511.0" layoutY="7.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Xoá" textFill="WHITE" fx:id="xoa">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/bin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="sua" layoutX="404.0" layoutY="7.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: navy;" text="Sửa" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/repair.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="table_tong" layoutX="14.0" layoutY="78.0" prefHeight="350.0" prefWidth="250.0">
+        <columns>
+          <TableColumn fx:id="table_Id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="table_cv" prefWidth="174.39998474121094" text="Công việc" />
+        </columns>
+      </TableView>
+      <Label layoutX="286.0" layoutY="100.0" text="Công việc">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_cv" layoutX="428.0" layoutY="100.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label layoutX="289.0" layoutY="157.0" text="Mô tả">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="ta_mota" layoutX="428.0" layoutY="151.0" prefHeight="5.0" prefWidth="200.0" />
+      <Label layoutX="289.0" layoutY="212.0" text="Ngày bắt đầu">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_Ngaybd" layoutX="428.0" layoutY="212.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label layoutX="289.0" layoutY="263.0" text="Ngày kết thúc">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_Ngayketthuc" layoutX="428.0" layoutY="262.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label layoutX="289.0" layoutY="312.0" text="Người thực hiện">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_Nguoithuchien" layoutX="428.0" layoutY="312.0" prefHeight="26.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
