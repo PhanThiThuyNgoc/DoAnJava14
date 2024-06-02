@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.TienDoCvController">
+   <children>
+      <Label layoutX="10.0" layoutY="10.0" text="Tiến độ công việc">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/id-card.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TableView fx:id="table_congviec" layoutX="13.0" layoutY="112.0" prefHeight="325.0" prefWidth="250.0">
+        <columns>
+          <TableColumn fx:id="tableclum_congviec" prefWidth="257.60000076293943" text="Công việc" />
+        </columns>
+      </TableView>
+      <Label layoutX="297.0" layoutY="138.0" text="Công việc">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="58.0" text="Tổng quan">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/fast-forward.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <AnchorPane layoutX="199.0" layoutY="58.0" prefHeight="30.0" prefWidth="400.0" style="-fx-background-color: blue;">
+         <children>
+            <AnchorPane fx:id="acp_TienDo" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="lb_PhanTramCV" layoutX="14.0" layoutY="6.0" prefHeight="18.0" prefWidth="29.0" text="30%" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="296.0" layoutY="188.0" text="Ngày bắt đầu">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="239.0" text="Ngày kết thúc">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="292.0" text="Người thực hiện">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_taocosodulieu" layoutX="456.0" layoutY="138.0" text="Tạo cơ sở dữ liệu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_ngaybatdau" layoutX="456.0" layoutY="188.0" text="16/04/2024">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_ngayketthuc" layoutX="456.0" layoutY="239.0" text="20/05/2024">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_nguoithuchien" layoutX="456.0" layoutY="292.0" text="Ngọc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="342.0" text="Hoàn thành">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_trangthai" layoutX="457.0" layoutY="342.0" text="Chưa hoàn thành">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
