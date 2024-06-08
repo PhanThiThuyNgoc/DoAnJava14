@@ -19,7 +19,7 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../image/home.jpg" />
+                        <Image url="@image/home.jpg" />
                      </image>
                   </ImageView>
                </graphic>
@@ -31,7 +31,7 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../image/id-card.png" />
+                        <Image url="@image/id-card.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -43,7 +43,7 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../image/multiple-users-silhouette.png" />
+                        <Image url="@image/multiple-users-silhouette.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -55,7 +55,7 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../image/suitcase.png" />
+                        <Image url="@image/suitcase.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -67,7 +67,7 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../image/medal-.png" />
+                        <Image url="@image/medal-.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -79,7 +79,7 @@
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../image/logout.png" />
+                        <Image url="@image/logout.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -90,13 +90,13 @@
          <children>
             <ImageView fitHeight="30.0" fitWidth="100.0" layoutX="28.0" layoutY="11.0">
                <image>
-                  <Image url="@../image/dhdn.jpg" />
+                  <Image url="@image/dhdn.jpg" />
                </image>
             </ImageView>
             <TextField fx:id="timkiemnhanh" layoutX="300.0" layoutY="13.0" prefWidth="200.0" promptText="Tìm kiếm nhanh..." style="-fx-background-color: white;" />
             <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="482.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../image/magnifying-glass.png" />
+                  <Image url="@image/magnifying-glass.png" />
                </image>
             </ImageView>
          </children>
