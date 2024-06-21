@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.GiaoDienController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlycongviec.View.GiaoDienDangNhapController">
    <children>
       <ImageView fitHeight="45.0" fitWidth="200.0" layoutX="501.0" layoutY="14.0" AnchorPane.leftAnchor="501.0" AnchorPane.topAnchor="14.0">
          <image>
-            <Image url="@image/dhdn.jpg" />
+            <Image url="@../image/dhdn.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="password" fitHeight="500.0" fitWidth="400.0">
          <image>
-            <Image url="@image/z5255114794124_44b1f6766235dd5f0233be1952130756.jpg" />
+            <Image url="@../image/z5255114794124_44b1f6766235dd5f0233be1952130756.jpg" />
          </image>
       </ImageView>
       <Label layoutX="547.0" layoutY="77.0" prefHeight="40.0" prefWidth="88.0" text="LOGIN" textAlignment="CENTER" textFill="NAVY">

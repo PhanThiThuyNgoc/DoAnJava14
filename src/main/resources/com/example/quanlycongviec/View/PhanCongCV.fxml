@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlynhanvien.PhanCongCvController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quanlycongviec.View.PhanCongCvController">
    <children>
       <Label layoutX="10.0" layoutY="10.0" text="Phân công công việc">
          <font>
@@ -20,7 +20,7 @@
          <graphic>
             <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@image/multiple-users-silhouette.png" />
+                  <Image url="@../image/multiple-users-silhouette.png" />
                </image>
             </ImageView>
          </graphic>
@@ -32,7 +32,7 @@
          <graphic>
             <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@image/add.png" />
+                  <Image url="@../image/add.png" />
                </image>
             </ImageView>
          </graphic>
@@ -44,7 +44,7 @@
          <graphic>
             <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@image/bin.png" />
+                  <Image url="@../image/bin.png" />
                </image>
             </ImageView>
          </graphic>
@@ -56,7 +56,7 @@
          <graphic>
             <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@image/repair.png" />
+                  <Image url="@../image/repair.png" />
                </image>
             </ImageView>
          </graphic>
