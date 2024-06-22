@@ -1,4 +1,4 @@
-package org.example.objectGson;
+package org.example.Model.ObjectGson;
 
 public class Status {
     private  boolean check;
@@ -37,3 +37,4 @@ public class Status {
                 '}';
     }
 }
+

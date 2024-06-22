@@ -1,4 +1,4 @@
-package org.example.objectGson;
+package org.example.Model.ObjectGson;
 
 public class Request{
     private String Request;
