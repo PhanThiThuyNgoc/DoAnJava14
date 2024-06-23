@@ -7,14 +7,14 @@ public class NhanVien {
     private  String Hovaten;
     private  String chucvu;
     private  String diachi;
-    private LocalDate ngaysinh;
+    private String ngaysinh;
     private  String gioitinh;
     private  String sodienthoai;
     private  String Gmail;
-    private  LocalDate ngaybatdaulamviec;
+    private  String ngaybatdaulamviec;
     private String linkAvatar;
 
-    public NhanVien(String hovaten,  String diachi, LocalDate ngaysinh, String gioitinh, String sodienthoai, String gmail) {
+    public NhanVien(String hovaten,  String diachi, String ngaysinh, String gioitinh, String sodienthoai, String gmail) {
         Hovaten = hovaten;
         this.diachi = diachi;
         this.ngaysinh = ngaysinh;
@@ -66,11 +66,11 @@ public class NhanVien {
         this.diachi = diachi;
     }
 
-    public LocalDate getNgaysinh() {
+    public String getNgaysinh() {
         return ngaysinh;
     }
 
-    public void setNgaysinh(LocalDate ngaysinh) {
+    public void setNgaysinh(String ngaysinh) {
         this.ngaysinh = ngaysinh;
     }
 
@@ -98,11 +98,11 @@ public class NhanVien {
         Gmail = gmail;
     }
 
-    public LocalDate getNgaybatdaulamviec() {
+    public String getNgaybatdaulamviec() {
         return ngaybatdaulamviec;
     }
 
-    public void setNgaybatdaulamviec(LocalDate ngaybatdaulamviec) {
+    public void setNgaybatdaulamviec(String ngaybatdaulamviec) {
         this.ngaybatdaulamviec = ngaybatdaulamviec;
     }
 

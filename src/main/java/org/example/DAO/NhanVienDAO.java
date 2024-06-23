@@ -1,6 +1,9 @@
 package org.example.DAO;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.example.Model.NhanVien;
+import org.example.objectGson.Taikhoan;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -32,10 +35,10 @@ public class NhanVienDAO {
                 nhanVien.setChucvu(data.getString("ChucVu"));
                 nhanVien.setIDNhanvien(data.getString("IDNhanVien"));
                 nhanVien.setDiachi(data.getString("DiaChi"));
-                nhanVien.setNgaysinh(data.getObject("NgaySinh", LocalDate.class));
+                nhanVien.setNgaysinh(data.getString("NgaySinh"));
                 nhanVien.setGioitinh(data.getString("GioiTinh"));
                 nhanVien.setSodienthoai(data.getString("SoDienThoai"));
-                nhanVien.setNgaybatdaulamviec(data.getObject("NgayBatDauLamViec", LocalDate.class));
+                nhanVien.setNgaybatdaulamviec(data.getString("NgayBatDauLamViec"));
                 nhanVien.setLinkAvatar(data.getString("Avatar"));
                 nhanVien.setGmail(data.getString("Gmail"));
             }
@@ -73,10 +76,10 @@ public class NhanVienDAO {
                 nhanVien.setChucvu(data.getString("ChucVu"));
                 nhanVien.setIDNhanvien(data.getString("IDNhanVien"));
                 nhanVien.setDiachi(data.getString("DiaChi"));
-                nhanVien.setNgaysinh(data.getObject("NgaySinh", LocalDate.class));
+                nhanVien.setNgaysinh(data.getString("NgaySinh"));
                 nhanVien.setGioitinh(data.getString("GioiTinh"));
                 nhanVien.setSodienthoai(data.getString("SoDienThoai"));
-                nhanVien.setNgaybatdaulamviec(data.getObject("NgayBatDauLamViec", LocalDate.class));
+                nhanVien.setNgaybatdaulamviec(data.getString("NgayBatDauLamViec"));
                 nhanVien.setLinkAvatar(data.getString("Avatar"));
                 nhanVien.setGmail(data.getString("Gmail"));
             }
@@ -115,6 +118,33 @@ public class NhanVienDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static boolean CapNhatDuLieuNguoiDungOnDB(NhanVien nhanVien){
+        // update dữ liệu lên csdl
+        String query = "UPDATE `nhanvien` SET `HoVaTen`='"+nhanVien.getHovaten()+"',`DiaChi`='"+nhanVien.getDiachi()+"',`NgaySinh`='"+nhanVien.getNgaysinh()+"',`GioiTinh`='"+nhanVien.getGioitinh()+"',`SoDienThoai`='"+nhanVien.getSodienthoai()+"' WHERE `Gmail` = '"+nhanVien.getGmail()+"'";
+        try {
+            new ConnectDB().getStmt().executeUpdate(query);
+            return true;
+        } catch (SQLException e) {
+            System.out.println(e);
+            return false;
+        }
+
+    }
+    public static ObservableList<String> getDanhSachTenNhanVien(){
+        ObservableList<String> listNV = FXCollections.observableArrayList();
+        String query = "SELECT `HoVaTen` FROM `nhanvien` WHERE `Trangthai` ='1'";
+        try {
+            // lấy danh sách nhân viên
+            ResultSet nv=  new ConnectDB().getStmt().executeQuery(query);
+            while (nv.next()){
+                listNV.add(nv.getString("HoVaTen"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return listNV;
     }
 
 }

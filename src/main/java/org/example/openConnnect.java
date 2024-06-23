@@ -54,6 +54,27 @@ public class openConnnect {
                     case "/laythongtinnhanvienByID":
                         Controller.getThongtinNVbyID(socket);
                         break;
+                    case "/getListCV":
+                        Controller.getListCongViec(socket);
+                        break;
+                    case "/ChuyenTrangThaiCongViec":
+                        Controller.ChuyenTrangThaiCongViec(socket);
+                        break;
+                    case "/HoanThanhCongViec":
+                        Controller.HoanThanhCongViec(socket);
+                        break;
+                    case "/DangKyTaiKhoan":
+                        Controller.DangKyTaiKhoan(socket);
+                        break;
+                    case "/getInfoUser":
+                        Controller.getInfoUser(socket);
+                        break;
+                    case "/CapNhatDuLieuNguoiDung":
+                        Controller.CapNhatDuLieuNguoiDung(socket);
+                        break;
+                    case "/LayDanhSachNhanVien":
+                        Controller.LayDanhSachNhanVien(socket);
+                        break;
                 }
             } catch ( IOException e){
                 throw  new RuntimeException(e);

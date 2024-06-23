@@ -1,6 +1,7 @@
 package org.example;
 
 import com.google.gson.Gson;
+import javafx.collections.ObservableList;
 
 import java.io.*;
 import java.net.Socket;
@@ -58,6 +59,27 @@ public class StreamSocket<In> {
 
     // Hàm gửi giá trị đến Client
     public void sendDataToClient(Socket socket, In dataObject){
+        //1. Chuyển dữ liệu object sang chuỗi json
+        String dataJson = new Gson().toJson(dataObject);
+        //Khởi tạo phương thức đọc, ghi stream socket
+        try {
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "UTF-8")); //gửi
+            BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8")); // đọc
+
+            //2. Gửi dữ liệu cho Client
+            writer.write(dataJson + "\n");
+            writer.flush();
+            System.out.println("Server đã gửi: "+ dataJson);
+
+            //3. Đóng socket
+            socket.close();
+        } catch (IOException e) {
+            System.out.println("Lỗi khởi tạo phương thức đọc, ghi socket!");
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void sendDataToClientObser(Socket socket, ObservableList<In> dataObject){
         //1. Chuyển dữ liệu object sang chuỗi json
         String dataJson = new Gson().toJson(dataObject);
         //Khởi tạo phương thức đọc, ghi stream socket

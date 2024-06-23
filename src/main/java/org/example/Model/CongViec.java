@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class CongViec {
     private String IDCongviec;
     private  String IDNhanvien;
-    private LocalDate hanNop;
-    private LocalDate NgayBatDau;
+    private String hanNop;
+    private String NgayBatDau;
     private  String Baocaocongviec;
     private String LinkNopsanpham;
     private  String Trangthaithuchien;
@@ -15,7 +15,7 @@ public class CongViec {
 
 
 
-    public CongViec(String IDCongviec, String IDNhanvien, LocalDate hanNop, LocalDate ngayBatDau, String baocaocongviec, String linkNopsanpham, String trangthaithuchien, String tencongviec) {
+    public CongViec(String IDCongviec, String IDNhanvien, String hanNop, String ngayBatDau, String baocaocongviec, String linkNopsanpham, String trangthaithuchien, String tencongviec) {
         this.IDCongviec = IDCongviec;
         this.IDNhanvien = IDNhanvien;
         this.hanNop = hanNop;
@@ -33,11 +33,11 @@ public class CongViec {
         this.nhanVien = nhanVien;
     }
 
-    public LocalDate getNgayBatDau() {
+    public String getNgayBatDau() {
         return NgayBatDau;
     }
 
-    public void setNgayBatDau(LocalDate ngayBatDau) {
+    public void setNgayBatDau(String ngayBatDau) {
         NgayBatDau = ngayBatDau;
     }
 
@@ -60,11 +60,11 @@ public class CongViec {
         this.IDNhanvien = IDNhanvien;
     }
 
-    public LocalDate getHanNop() {
+    public String getHanNop() {
         return hanNop;
     }
 
-    public void setHanNop(LocalDate hanNop) {
+    public void setHanNop(String hanNop) {
         this.hanNop = hanNop;
     }
 
