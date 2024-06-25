@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qlnhanvien.View.GDCV_tatcaController">
+   <children>
+      <TableView fx:id="table_taca" prefHeight="450.0" prefWidth="612.0">
+         <columns>
+            <TableColumn fx:id="colum_IDcongviec" prefWidth="119.33332824707031" text="ID Công Việc" />
+            <TableColumn fx:id="colum_congviec" prefWidth="220.66665649414062" text="Công Việc " />
+            <TableColumn fx:id="colum_Hannop" minWidth="0.0" prefWidth="130.0" text="Hạn Nộp" />
+            <TableColumn fx:id="colum_Trangthaithuchien" prefWidth="140.6666259765625" text="Trạng Thái Thực Hiện" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
