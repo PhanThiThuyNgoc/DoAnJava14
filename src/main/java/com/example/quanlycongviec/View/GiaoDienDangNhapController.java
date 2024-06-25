@@ -2,6 +2,8 @@ package com.example.quanlycongviec.View;
 
 
 import com.example.quanlycongviec.Controller.Controller;
+import com.example.quanlycongviec.Controller.StreamSocket;
+import com.example.quanlycongviec.Model.ObjectGson.DangNhap;
 import com.example.quanlycongviec.Model.ObjectGson.Status;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -41,7 +43,8 @@ public class GiaoDienDangNhapController implements Initializable {
 
                 if(Email != "" && passWord != "" && Email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")) {
                     System.out.println("Click to Login");
-                    Status check = Controller.kiemtradangnhap(Email, passWord );
+//                    Status check = Controller.kiemtradangnhap(Email, passWord );
+                    Status check = new StreamSocket<DangNhap, Status>().SendRequest("/dangnhaptaikhoan",new DangNhap(Email, passWord), Status.class);
                     System.out.println(check);
 
                     if(check.isCheck()) {

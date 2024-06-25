@@ -11,16 +11,7 @@ import java.util.ResourceBundle;
 public class HomeController implements Initializable {
 
     @FXML
-    private Label lb_congviec;
-
-    @FXML
-    private Label lb_nv_ngiviec;
-
-    @FXML
-    private Label lb_soluongnhanvien;
-
-    @FXML
-    private Label lb_tiendo;
+    private Label congviec;
 
     @FXML
     private Label new_1;
@@ -28,23 +19,34 @@ public class HomeController implements Initializable {
     @FXML
     private Label new_2;
 
+    @FXML
+    private Label nhanvien;
+
+    @FXML
+    private Label nv_ngiviec;
+
+    @FXML
+    private Label tiendo;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // cập nhập số lương nhân viên ddang làm việc
         String soluongnhanvien = Controller.getCoutNhanvien("1");
-        lb_soluongnhanvien.setText(soluongnhanvien);
+        System.out.println(soluongnhanvien);
+
+        nhanvien.setText(soluongnhanvien);
 
         // cập nhập số lương nhân viên  đã nghĩ  việc
         String nhanviennghiviec = Controller.getCoutNhanvien("0");
-        lb_nv_ngiviec.setText(nhanviennghiviec);
+        nv_ngiviec.setText(nhanviennghiviec);
 
         // cập nhập ố lượng công việc
-        int congviec = Controller.getCoutCongViec();
-        lb_congviec.setText(String.valueOf(congviec));
+        int congViec = Controller.getCoutCongViec();
+        congviec.setText(String.valueOf(congViec));
 
         // cập nhập tiến độ công vệc
         int congviechoanthanh = Controller.getCoutCongviechoanthanh();
-        int phantram = (congviechoanthanh*100)/congviec;
-        lb_tiendo.setText(phantram+"%");
+        int phantram = (congviechoanthanh*100)/congViec;
+        tiendo.setText(phantram+"%");
     }
 }
